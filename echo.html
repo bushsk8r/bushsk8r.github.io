@@ -17,22 +17,23 @@
         a creative sandbox where ideas are left to bounce around until they find a way out...right now playing with the idea of using a skatepark as a musical instrument
     </p>
 
+    <audio src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    </audio>
+
     <div class="ego">
         <h2>
-            intro
+            Start
         </h2>
 
-        <audio src="aud/intro.wav"
-            controls autoplay>
-        </audio>
+        <ul id="start">
+            <li class="current-song"><a href="aud/intro.wav">intro<a/></li>
+            <li><a href="aud/mantra.wav">mantra<a/></li>
+        </ul>
 
-        <h2>
-            mantra
-        </h2>
+        <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+        <script src="audio_player.js"></script>
 
-        <audio src="aud/mantra.wav"
-            controls autoplay>
-        </audio>
     </div>
 
 
@@ -41,52 +42,25 @@
             ECHO echo ---- _ _ _ _ ....
         </h2>
 
-        <audio src="aud/echo chamber.wav"
-            controls>
-        </audio>
+        <ul id="echo_chamber">
+            <li class="current-song"><a href="aud/echo chamber.wav">chamber 0<a/></li>
+            <li><a href="aud/echo chamber 1.wav">chamber 1<a/></li>
+            <li><a href="aud/echo chamber 2.wav">chamber 2<a/></li>
+            <li><a href="aud/echo chamber 3.wav">chamber 3<a/></li>
+            <li><a href="aud/echo chamber 4.wav">chamber 4<a/></li>
+            <li><a href="aud/echo chamber 5.wav">chamber 5<a/></li>
+            <li><a href="aud/echo chamber 6.wav">chamber 6<a/></li>
+            <li><a href="aud/echo chamber 7.wav">chamber 7<a/></li>
+            <li><a href="aud/echo chamber 8.wav">chamber 8<a/></li>
+            <li><a href="aud/echo chamber 9.wav">chamber 9<a/></li>
+            <li><a href="aud/echo chamber 10.wav">chamber 10<a/></li>
+        </ul>
 
-        <audio src="aud/echo chamber 1.wav"
-            controls>
-        </audio>
-
-        <audio src="aud/echo chamber 2.wav"
-            controls>
-        </audio>
-
-        <audio src="aud/echo chamber 3.wav"
-            controls>
-        </audio>
-
-        <audio src="aud/echo chamber 4.wav"
-            controls>
-        </audio>
-
-        <audio src="aud/echo chamber 5.wav"
-            controls>
-        </audio>
-
-        <audio src="aud/echo chamber 6.wav"
-            controls>
-        </audio>
-
-        <audio src="aud/echo chamber 7.wav"
-            controls>
-        </audio>
-
-        <audio src="aud/echo chamber 8.wav"
-            controls>
-        </audio>
-
-        <audio src="aud/echo chamber 9.wav"
-            controls>
-        </audio>
-
-        <p>listening to white ferrari</p>
-
-        <audio src="aud/echo chamber 10.wav"
-            controls>
-        </audio>
-
+        <script>
+            // loads the audio player
+            audioPlayer_echo();
+            audioPlayer();
+        </script>
     </div>
 
     <p>
