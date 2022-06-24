@@ -45,3 +45,27 @@ function audioPlayer_echo(){
                   $("#audioPlayer_echo")[0].play();
                  });
              }
+
+function audioPlayer_echo2(){
+         var currentSong = 0;
+           $("#audioPlayer_echo2")[0].src = $("#echo_chamber2 li a")[0];
+           // $("#audioPlayer")[0].play();
+                           $("#echo_chamber2 li a").click(function(e){
+                              e.preventDefault();
+                              $("#audioPlayer_echo2")[0].src = this;
+                              $("#audioPlayer_echo2")[0].play();
+                              $("#echo_chamber2 li").removeClass("current-song");
+                               currentSong = $(this).parent().index();
+                               $(this).parent().addClass("current-song");
+                              });
+
+                              $("#audioPlayer_echo2")[0].addEventListener("ended", function(){
+                              currentSong++;
+                               if(currentSong == $("#echo_chamber2 li a").length)
+                                   currentSong = 0;
+                               $("#echo_chamber2 li").removeClass("current-song");
+                               $("#echo_chamber2 li:eq("+currentSong+")").addClass("current-song");
+                               $("#audioPlayer_echo2")[0].src = $("#echo_chamber2 li a")[currentSong].href;
+                               $("#audioPlayer_echo2")[0].play();
+                              });
+                          }
