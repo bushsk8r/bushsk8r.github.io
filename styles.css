@@ -2,6 +2,10 @@ h1 {
     background-color: #228b22;
 }
 
+a {
+    color: #3e463f;
+}
+
 body {
     font-family: Helvetica;
     font-size: 200%;
