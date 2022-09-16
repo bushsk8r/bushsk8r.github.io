@@ -9,6 +9,16 @@ a {
 body {
     font-family: Helvetica;
     font-size: 200%;
+    text-align: center;
+}
+
+td {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+li {
+    text-align: left;
 }
 
 .love{
@@ -34,4 +44,9 @@ body {
 .earth{
     color: white;
     background-color: #3f000f;
+    text-decoration-color: white;
+}
+
+a.earth{
+    color: white;
 }
