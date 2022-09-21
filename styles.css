@@ -3,7 +3,7 @@ h1 {
 }
 
 a {
-    color: #3e463f;
+    color: #003F30;
 }
 
 body {
@@ -45,8 +45,4 @@ li {
     color: white;
     background-color: #3f000f;
     text-decoration-color: white;
-}
-
-a.earth{
-    color: white;
 }
