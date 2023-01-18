@@ -21,6 +21,10 @@ li {
     text-align: left;
 }
 
+ol {
+  margin:0 0 0 10px;
+}
+
 .love{
     background-color: #ccbf00;
 }
