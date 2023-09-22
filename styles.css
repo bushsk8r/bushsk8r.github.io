@@ -10,6 +10,9 @@ body {
     font-family: Helvetica;
     font-size: 200%;
     text-align: center;
+    text-shadow: 0px 0px 2px black;
+    padding: 0px;
+    margin: 0;
 }
 
 .center {
@@ -55,4 +58,8 @@ ol {
     color: white;
     background-color: #3f000f;
     text-decoration-color: white;
+}
+
+.whoLink{
+  padding: 10px;
 }
